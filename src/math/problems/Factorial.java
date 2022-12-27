@@ -9,5 +9,17 @@ public class Factorial {
          *
          */
 
-    }
-}
+
+                int num = 5;
+                long factorial = findFactorial(num);
+                System.out.println("Factorial of " + num + " is " + factorial);
+            }
+            public static long findFactorial(int num)
+            {
+                if (num >= 1)
+                    return num * findFactorial(num - 1);
+                else
+                    return 1;
+            }
+        }
+

@@ -17,7 +17,10 @@ public static void main(String[] args) {
         map.put(4, "Boston");
         map.put(5, "San Jose");
         map.put(6, "Seattle");
+        for(map.Entry<Integer, String> entry: map.entrySet()){
+                System.out.println(entry.getKey()+ " "+entry.getValue() );
 
+        }
 
 
     }
